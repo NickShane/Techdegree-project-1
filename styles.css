@@ -19,6 +19,7 @@ a {
 }
 
 
+
 /* Section Styles */
 
 .main-nav {
@@ -57,7 +58,7 @@ a {
 
 header {
       text-align: center;
-      background: url('Resources/My%20background.jpeg') no-repeat top center;
+      background: url('Resources/images/My%20background.jpeg') no-repeat top center;
       background-size: cover;
       background-position: center;
       background-attachment: fixed;
@@ -65,6 +66,7 @@ header {
       overflow: hidden;
       padding-top: 60px;
 }
+
 header {
   line-height: 1.5;
 }
@@ -72,12 +74,13 @@ header .profile-image {
   margin-top: 50px;
   width: 130px;
   height: 140px;
-  border-radius: 50%;
+  border-radius: 25%;
   border: 1px solid white;
+  padding-bottom: 1px;
 
 }
 header .profile-image:hover {
-  transform: scale(1.1) rotate(10deg);
+  transform: scale(1.2) rotate(10deg);
   
 }
 .tag {
@@ -181,7 +184,75 @@ ul.skills {
 }
 
 
-/** FOTER **/
+
+/**  Gallery  **/
+
+
+
+ img {
+    padding-bottom: 15px;
+    width: 100%;
+    height: 180px;
+    vertical-align: middle;
+    line-height: 10px;
+    margin: 5px;
+    
+}
+
+
+
+.husky-showcase {
+    list-style: none;
+    width: 90%;
+    display: flex;
+    margin-left: 40px;
+    padding-left: 30px;
+}
+
+.husky-showcase li {
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+.dog-photo {
+    width: 100%;
+    margin: 5px;
+    overflow: hidden;
+    background-color: rgba(186, 186, 186, 0.47);
+    border-radius: 5%;
+    background-size: contain;
+    background-position: center;
+    
+}
+
+.dog-photo img {
+    opacity: 0.9;
+    transform: scale(1.15);
+    transition: transform 0.5s;
+
+}
+
+.dog-photo img:hover {
+    opacity: 2;
+    transform: scale(1.03);
+    
+}
+
+.statement {
+    display: inline-block;
+    box-sizing: border-box;
+    background: rgb(235, 231, 231);
+    border-radius: 10px;
+    
+}
+
+
+
+
+
+
+/** FOOTER **/
 
 footer {
   width: 100%;
@@ -217,30 +288,31 @@ a.social {
   background-size: 30px 30px;
   opacity: .4;
   transition: all .5s;
-
-  
-  
 }
 
 
 
 a.twitter {
-  background-image: url(Resources/twitter.svg);
+  background-image: url(Resources/logos/twitter.svg);
   
 }
 a.linkedin {
-  background-image: url(Resources/linkedin.svg);
+  background-image: url(Resources/logos/linkedin.svg);
 }
 a.github {
-  background-image: url(Resources/github.svg);
+  background-image: url(Resources/logos/github.svg);
   
 }
 a.social:hover {
   opacity: 1;
+    transform: scale(1.2);
 }
 .clearfix {
   clear: both;
 }
+
+
+
 
 /* Styles for larger screens */
 @media screen and (min-width: 720px) {
@@ -270,6 +342,8 @@ a.social:hover {
   main p {
     line-height: 1.6em;
   }
+    
+    
 
   footer {
     font-size: 1.3em;
